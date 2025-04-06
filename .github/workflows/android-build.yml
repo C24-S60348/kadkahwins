@@ -25,29 +25,6 @@ jobs:
         with:
           flutter-version: '3.29.2'
 
-      - name: Cache Gradle Wrapper
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.gradle/wrapper/
-            ~/.gradle/caches/
-          key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
-          restore-keys: |
-            ${{ runner.os }}-gradle-
-
-      - name: Cache Flutter Dependencies
-        uses: actions/cache@v3
-        with:
-          path: |
-            ~/.pub-cache
-            android/.gradle/caches
-            android/gradle/wrapper/dists
-            android/gradle/wrapper/gradle-wrapper.properties
-          key: ${{ runner.os }}-flutter-${{ hashFiles('**/pubspec.yaml') }}
-          restore-keys: |
-            ${{ runner.os }}-flutter-
-            ${{ runner.os }}-
-
       - name: Get Dependencies
         run: flutter pub get
 
