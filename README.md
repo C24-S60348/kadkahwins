@@ -16,4 +16,10 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 
-Testing Push
+Flutter Note :
+
+Typing
+stl- automate code starter 
+
+Remove debug Banner UI
+debugShowCheckedModeBanner: false, 
