@@ -52,7 +52,7 @@ jobs:
         run: flutter pub get
 
       - name: Generate Gradle Wrapper
-        run: cd android && gradle wrapper --gradle-version 8.10.2
+        run: cd android && gradle wrapper --gradle-version 8.13
 
       - name: Grant Execute Permission for Gradle Wrapper
         run: chmod +x android/gradlew
