@@ -1,4 +1,4 @@
-99name: Build Android APK
+name: Build Android APK
 
 on:
   workflow_dispatch:  # Allows manual trigger
