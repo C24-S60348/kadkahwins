@@ -1,4 +1,4 @@
-name: Build Android APK
+99name: Build Android APK
 
 on:
   workflow_dispatch:  # Allows manual trigger
@@ -52,7 +52,7 @@ jobs:
         run: flutter pub get
 
       - name: Generate Gradle Wrapper
-        run: cd android && gradle wrapper --gradle-version 8.13
+        run: cd android && gradle wrapper --gradle-version 8.10.2
 
       - name: Grant Execute Permission for Gradle Wrapper
         run: chmod +x android/gradlew
