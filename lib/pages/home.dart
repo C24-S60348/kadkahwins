@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:celik_tafsir/pages/form.dart';
 import 'package:flutter/material.dart';
 
 class HomePages extends StatefulWidget {
@@ -116,7 +117,10 @@ class _HomePagesState extends State<HomePages> {
                   _buildFeatureCard(
                     title: 'Tetapan Akaun',
                     icon: Icons.settings,
-                    onTap: () {},
+                    onTap: () {Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const MyForm()),
+            );},
                   ),
                 ],
               ),

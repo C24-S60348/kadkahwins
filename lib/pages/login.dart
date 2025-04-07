@@ -69,7 +69,7 @@ class _MyLoginState extends State<MyLogin> {
                           if (value == null || value.isEmpty) {
                             return 'Please enter your email';
                           }
-                          // Basic email validation
+
                           if (!RegExp(r"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$")
                               .hasMatch(value)) {
                             return 'Please enter a valid email';
@@ -167,13 +167,11 @@ class _MyLoginState extends State<MyLogin> {
         _isLoading = true;
       });
 
-      // Perform login logic (e.g., API call)
       Future.delayed(const Duration(seconds: 2), () {
         setState(() {
           _isLoading = false;
         });
 
-        // After successful login, you can navigate to the home page or another page
         Navigator.pushReplacementNamed(context, '/home');
       });
     }

@@ -1,6 +1,9 @@
+import 'package:celik_tafsir/pages/finish.dart';
+import 'package:celik_tafsir/pages/form.dart';
 import 'package:celik_tafsir/pages/home.dart';
 import 'package:celik_tafsir/pages/login.dart';
 import 'package:celik_tafsir/pages/register.dart';
+import 'package:celik_tafsir/pages/templates.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_html/flutter_html.dart';
 // import 'package:http/http.dart' as http;
